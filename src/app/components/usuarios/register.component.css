@@ -1,0 +1,25 @@
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px; /* Ajusta el margen según tus necesidades */
+  }
+  
+  mat-form-field {
+    width: 100%;
+    max-width: 400px; /* Ajusta el ancho máximo según tus necesidades */
+    margin-bottom: 15px; /* Ajusta el margen inferior según tus necesidades */
+    margin-left: 27px;
+  }
+  
+  button {
+    margin-top: 0px; /* Ajusta el margen superior según tus necesidades */
+  }
+  
+  mat-card {
+    max-width: 1000px;
+    width: 450px;
+    height: 315px;
+    text-align: center;
+  }

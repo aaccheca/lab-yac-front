@@ -1,0 +1,11 @@
+<app-navbar></app-navbar>
+<div class="dashboard-container">
+  <app-menu [userType]="userType"></app-menu>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div id="body">
+    <iframe src="https://calendar.google.com/calendar/embed?src=es.ec%23holiday%40group.v.calendar.google.com&ctz=America%2FGuayaquil" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+</div>

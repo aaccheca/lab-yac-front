@@ -1,0 +1,19 @@
+.center {
+    margin-top: 10px;
+    position: absolute;
+
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  .height{
+    padding: 20px 10px; 
+    line-height: 28px;
+  }
+
+  mat-card {
+    max-width: 1000px;
+    height: 170px;
+    text-align: center;
+  }

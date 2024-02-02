@@ -1,0 +1,22 @@
+.logo-container {
+    display: flex;
+    align-items: center;
+  }
+  
+  .logo {
+    max-width: 1000px; 
+    margin-right: 30px; 
+    width: 100px;
+  }
+  
+  .university-name {
+    font-size: 18px; 
+  }
+  
+  .toolbar-icons {
+    margin-left: auto;
+  }
+  
+  #name {
+    color: black;
+  }

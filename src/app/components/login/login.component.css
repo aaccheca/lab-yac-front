@@ -1,0 +1,31 @@
+body{
+    background-image: url('./../../../assets/computer-labs.jpg');
+}
+
+mat-card {
+    max-width: 400px;
+    margin: 2em auto;
+    text-align: center;
+  }
+  
+mat-form-field {
+    display: block;
+  }
+
+.logo{
+  width: 190px;
+  margin-bottom: 30px;
+}
+
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-image: url('./../../../assets/computer-labs.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(0, 0, 0, 0.5); 
+  color: white;
+}

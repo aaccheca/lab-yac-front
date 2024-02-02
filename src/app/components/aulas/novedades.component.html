@@ -1,0 +1,11 @@
+<form>
+    <mat-card>
+      <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Novedades..." class="height" [(ngModel)]="data.novedades" name="mensaje" required>
+      </mat-form-field>
+    <br>
+      <button mat-raised-button color="primary" class="center"(click)="onNoClick()">Enviar</button>
+    </mat-card-content>
+    </mat-card>
+  </form>

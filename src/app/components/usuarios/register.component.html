@@ -1,0 +1,21 @@
+<form>
+<mat-card>
+    <mat-form-field>
+      <input matInput placeholder="Nombre de usuario" [(ngModel)]="usuario.nombreUsuario" name="username" required>
+    </mat-form-field>
+  
+    <mat-form-field>
+      <input matInput type="password" placeholder="Contraseña" [(ngModel)]="usuario.contrasena" name="password" required>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-select placeholder="Tipo de usuario" [(ngModel)]="usuario.tipoUsuario" name="userType" required>
+          <mat-option value="Administrador">Administrador</mat-option>
+          <mat-option value="Maestro">Maestro</mat-option>
+        </mat-select>
+      </mat-form-field>
+  
+    <button mat-raised-button color="primary"(click)="onNoClick2()">Registrarse</button>
+</mat-card>
+  </form>
+  

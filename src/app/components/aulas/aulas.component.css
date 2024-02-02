@@ -1,0 +1,97 @@
+#body{
+    margin-left: 20%;
+    padding-top: 2%;
+    /*height: 1000px;*/
+}
+
+.aulas-container {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-around; /* Cambiado de space-between a space-around */
+  gap: 30px; /* Espacio entre los elementos */
+}
+
+.aula-button {
+  flex-basis: calc(33.33% - 20px); /* Ajuste del ancho y del espacio entre elementos */
+  margin-bottom: 90px; /* Ajuste del espacio inferior entre elementos */
+}
+
+table, th , td  {
+    border: 1px solid rgb(73, 52, 52);
+    border-collapse: collapse;
+    padding: 5px;
+  }
+
+  #tabla-registros {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #tabla-registros td, #tabla-registros th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #tabla-registros tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #tabla-registros tr:hover {background-color: #ddd;}
+  
+  #tabla-registros th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #2d759e;
+    color: white;
+  }
+  h1 {
+    background-color: #2d759e;
+    color: white;
+    text-align: center;
+  }
+  
+  .button {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+
+  .buttoncolor {
+    width: 100%; /* Ajuste para que los botones ocupen todo el ancho del contenedor */
+    height: 200%; /* Ajuste para que los botones ocupen todo el alto del contenedor */
+    background-color: rgba(231, 205, 205, 0.801);
+    color: black;
+    font-weight: bold;
+    border: 2px solid rgba(100, 100, 100);
+  }
+  
+  .buttoncolor[disabled] {
+    background-color: rgba(243, 113, 113, 0.801);
+    color: black;
+    font-weight: bold;
+    border: 2px solid rgba(100, 100, 100);
+    cursor: not-allowed;
+  }
+
+  .buttoncolor.active {
+    background-color: #00ff00;
+    color: black;
+    font-weight: bold;
+    border: 2px solid rgba(100, 100, 100);
+  }
+  
+  .buttoncolor.active:hover {
+    background-color: #008000;
+  }
+  
+  .buttoncolor:hover {
+    background-color: rgb(109, 97, 97);
+  }

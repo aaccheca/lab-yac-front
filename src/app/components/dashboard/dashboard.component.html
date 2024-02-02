@@ -1,0 +1,23 @@
+<app-navbar></app-navbar>
+<div class="dashboard-container">
+  <app-menu [userType]="userType"></app-menu>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div id="body">
+  <c-carousel>
+    <c-carousel-inner>
+      <c-carousel-item *ngFor="let slide of slides">
+        <img
+          [src]="slide.src"
+          alt="{{ slide.title }}"
+          class="carro"
+          loading="lazy" />
+      </c-carousel-item>
+    </c-carousel-inner>
+   <!-- <c-carousel-control [routerLink] caption="Next" direction="next"></c-carousel-control> -->
+  </c-carousel>
+</div>
+  

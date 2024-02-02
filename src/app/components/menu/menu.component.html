@@ -1,0 +1,53 @@
+<nav>
+        <ul>
+          <li *ngIf="userType === 'Administrador'">
+            <a routerLink="/dashboard">
+              <mat-icon>dashboard</mat-icon>
+              <span class="link-text">Dashboard</span>
+            </a>
+          </li>
+          <li *ngIf="userType === 'Administrador'">
+            <a routerLink="/registros">
+              <mat-icon>assignment</mat-icon>
+              <span class="link-text">Registros</span>
+            </a>
+          </li>
+          <li *ngIf="userType === 'Administrador'">
+            <a routerLink="/horario">
+              <mat-icon>calendar_today</mat-icon>
+              <span class="link-text">Horario</span>
+            </a>
+          </li>
+          <li *ngIf="userType === 'Administrador'">
+            <a routerLink="/novedades">
+              <mat-icon>notifications</mat-icon>
+              <span class="link-text">Novedades</span>
+            </a>
+          </li>
+          <li *ngIf="userType === 'Administrador'">
+            <a routerLink="/usuarios">
+              <mat-icon>group</mat-icon>
+              <span class="link-text">Usuarios</span>
+            </a>
+          </li>
+          <li *ngIf="userType === 'Maestro'">
+            <a routerLink="/dashboard">
+              <mat-icon>dashboard</mat-icon>
+              <span class="link-text">Dashboard</span>
+            </a>
+          </li>
+          <li *ngIf="userType === 'Maestro'">
+            <a routerLink="/aulas">
+              <mat-icon>important_devices</mat-icon>
+              <span class="link-text">Aulas</span>
+            </a>
+          </li>
+          <li *ngIf="userType === 'Maestro'">
+            <a routerLink="/horario">
+              <mat-icon>calendar_today</mat-icon>
+              <span class="link-text">Horario</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      

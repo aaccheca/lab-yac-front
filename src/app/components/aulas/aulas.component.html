@@ -1,0 +1,16 @@
+<app-navbar></app-navbar>
+<div class="dashboard-container">
+  <app-menu [userType]="userType"></app-menu>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div id="body" class="aulas-container">
+    <div *ngFor="let aula of aulas; let i = index" class="aula-button">
+    <button class="button buttoncolor" [disabled]="!aula.estado" 
+        [ngClass]="{'active': activo === i}"
+        (click)="color(i,aula)">
+    {{ aula.nombre }}</button>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<app-navbar></app-navbar>
+<div class="dashboard-container">
+  <app-menu [userType]="userType"></app-menu>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div id="body">
+  <h1>REGISTRO USO DE AULAS</h1>
+    <table id="tabla-registros">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Hora Ingreso</th>
+            <th>Hora Salida</th>
+            <th>Nombre Aula</th>
+            <th>Nombre Usuario</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let registro of registros">
+            <td>{{ registro.fecha }}</td>
+            <td>{{ registro.horaIngreso }}</td>
+            <td>{{ registro.horaSalida }}</td>
+            <td>{{ registro.aula.nombre }}</td>
+            <td>{{ registro.usuario.nombreUsuario }}</td>
+          </tr>
+        </tbody>
+      </table>      
+</div>

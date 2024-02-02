@@ -1,0 +1,31 @@
+<mat-toolbar color="primary">
+
+    <div class="logo-container">
+      <img src="./../../../assets/logo-yavirac-2.png" class="logo">
+      <span class="university-name">CONTROL LABORATORIOS <b>YAVIRAC</b></span>
+    </div>
+  
+    <div class="toolbar-icons">
+
+      <button mat-icon-button [matMenuTriggerFor]="notificationsMenu">
+        <mat-icon>notifications</mat-icon>
+      </button>
+      <mat-menu #notificationsMenu="matMenu">
+
+        <button mat-menu-item *ngFor="let notificacion of notificaciones" (click)="eliminarNotificacion(notificacion.id)">
+          {{ notificacion.notificacion }}
+          <!--<button mat-icon-button class="buttonx"><mat-icon class="buttonxx">clear</mat-icon></button>-->
+        </button>
+
+      </mat-menu>
+  
+      <button mat-icon-button [matMenuTriggerFor]="userMenu">
+        <mat-icon>account_circle</mat-icon>
+      </button>
+      <mat-menu #userMenu="matMenu">
+        <span mat-menu-item id="name">{{ loggedUserName }}</span>
+        <button mat-menu-item (click)="logout()">Cerrar sesión</button>
+      </mat-menu>
+    </div>
+  </mat-toolbar>
+  

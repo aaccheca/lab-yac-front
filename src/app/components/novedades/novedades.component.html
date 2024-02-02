@@ -1,0 +1,37 @@
+<app-navbar></app-navbar>
+<div class="dashboard-container">
+  <app-menu [userType]="userType"></app-menu>
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
+
+<div id="body">
+  <h1>NOVEDADES</h1>
+    <table id="tabla-novedades">
+        <thead>
+          <tr>
+            <th width="9%">Fecha</th>
+            <th width="11%">Hora Ingreso</th>
+            <th width="11%">Hora Salida</th>
+            <th width="11%">Nombre Aula</th>
+            <th width="20%">Nombre Usuario</th>
+            <th>Novedades</th>
+            <th width="10%">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let registro of registros">
+            <td>{{ registro.fecha }}</td>
+            <td>{{ registro.horaIngreso }}</td>
+            <td>{{ registro.horaSalida }}</td>
+            <td>{{ registro.aula.nombre }}</td>
+            <td>{{ registro.usuario.nombreUsuario }}</td>
+            <td>{{ registro.novedades }}</td>
+            <td>
+                <button class="button" (click)="eliminarNovedades(registro.id)">Solucionado</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>      
+</div>
